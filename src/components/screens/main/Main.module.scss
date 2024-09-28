@@ -1,0 +1,40 @@
+.main {
+	> header {
+		> span {
+			display: flex;
+			justify-content: center;
+			color: #fff;
+			font-size: 34px;
+			top: 290px;
+		}
+	}
+}
+
+.main_section {
+	disply: flex;
+	text-align: center;
+	.section_text {
+		font-size: 35px;
+		margin: 0 auto;
+	}
+	.section_lists {
+		> li {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.main_footer {
+	margin-top: 100px;
+	disply: flex;
+	text-align: center;
+	ul {
+		> li {
+			font-size: 20px;
+			margin-bottom: 45px;
+			.install {
+				height: 100px;
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.item {
+	width: 100%;
+	height: 45%;
+	position: relative;
+	> img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 40px;
+	}
+	.minecraft_logo {
+		width: 60px;
+	}
+}
+.images {
+	background-image: url('../../../assets/images/main.jpg');
+	text-shadow: 4px 4px 4px #000218;
+}
