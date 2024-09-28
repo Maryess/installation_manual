@@ -1,4 +1,11 @@
 import Carousel from 'react-material-ui-carousel';
+import minecraft from '../../../assets/icons/minecraft.svg';
+import optifine from '../../../assets/icons/optifine.svg';
+import install_1 from '../../../assets/images/install_1.png';
+import install_2 from '../../../assets/images/install_2.png';
+import install_3 from '../../../assets/images/install_3.png';
+import install_4 from '../../../assets/images/install_4.png';
+import Button from '../../ui/button/Button';
 import Item from '../../ui/item/Item';
 import styles from './Main.module.scss';
 
@@ -49,32 +56,42 @@ export default function Main() {
 			</section>
 			<footer className={styles.main_footer}>
 				<ul className={styles.section_lists}>
+					<li>1.Установите TLauncher.</li>
 					<li>
-						1.Установите TLauncher.
-						<a href='https://tlauncher.org/'>Перейдите по ссылке</a>
+						{' '}
+						<Button href={'https://tlauncher.org/'} text={'Перейти на сайт'} />
 					</li>
 					<li>
 						2.Затем установите желаемую версии игры, которая подходит для сборки
 						модов.
-						<div>
-							<img
-								className={styles.install}
-								src='../../../assets/images/install_1.png'
-								alt=''
-							/>
-						</div>
 					</li>
 					<li>
-						3.Откройте папку игры. Это можно сделать либо через команндую строку
-						либо в самом лаучере.
+						<img className={styles.install} src={install_1} alt='' />
+						<img className={styles.install} src={install_2} alt='' />
 					</li>
-					<li>4.Надите папку mods</li>
 					<li>
-						5.Затем установите сборку с нашего руководства.Ссылка на яндекс диск
+						3.Откройте папку игры.Это можно сделать либо через командную строку
+						либо в самом лаунчере.
+					</li>
+					<li>
+						<img className={styles.install} src={install_3} alt='' />
+					</li>
+					<li>4.Надите папку .minecraft, а затем mods</li>
+					<li>5.скачайте сборку с нашего руководства.</li>
+					<li>
+						<Button href={''} text={'На яндекс диск'} />
 					</li>
 					<li>6.Скопируйте моды и вставьте в папку mods</li>
-					Можете запускать игру и наслаждаться!
+					<li>
+						<img className={styles.install} src={install_4} alt='' />
+					</li>
+					<li>Можете запускать игру и играть вместе с друзьями</li>
 				</ul>
+
+				<div className={styles.logo}>
+					<img src={optifine} alt='' />
+					<img src={minecraft} alt='' />
+				</div>
 			</footer>
 		</div>
 	);
