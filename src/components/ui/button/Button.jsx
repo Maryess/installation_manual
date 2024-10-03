@@ -1,11 +1,17 @@
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
-export default function Button({ onClick, text, href }) {
+export default function Button({ onClick, text, href, download }) {
 	return (
 		<button className={styles.button}>
-			<a href={href} onClick={onClick}>
-				{text}
-			</a>
+			{download === "download" ? (
+				<a href={href} onClick={onClick} download>
+					{text}
+				</a>
+			) : (
+				<a href={href} onClick={onClick}>
+					{text}
+				</a>
+			)}
 		</button>
 	);
 }
